@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { stdin, stdout } = process;
-const EventEmitter = require('events');
-const emitter = new EventEmitter();
 
 stdout.write('Hello! Please, write your text.\n');
 fs.writeFile(path.join(__dirname, 'text.txt'), '', (err) => {
