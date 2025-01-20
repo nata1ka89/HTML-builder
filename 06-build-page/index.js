@@ -57,14 +57,6 @@ async function copyDir(resourceFolder) {
         );
       }
     }
-
-    /*const filesCopy = await fs.readdir(path.join(newFolder, 'assets'));
-
-    for (const fileCopy of filesCopy) {
-      if (!files.includes(fileCopy)) {
-        await fs.unlink(path.join(newFolder, 'assets', fileCopy));
-      }
-    }*/
   } catch {
     console.error('Error');
   }
